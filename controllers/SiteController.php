@@ -123,4 +123,15 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * 2018 1.23 测试hello
+     * 
+     * @param string 要输出的内容
+     * @return string
+     */
+    public function actionSay($message = 'Hello')
+    {
+        return $this->render('say', ['message' => $message]);
+    }
 }
